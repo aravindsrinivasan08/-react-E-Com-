@@ -1,0 +1,31 @@
+.trust-seals-container {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .trust-seals-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .trust-seals {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .trust-seals img {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+    max-width: 100%;
+  }
+  
+  .trust-seals img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  

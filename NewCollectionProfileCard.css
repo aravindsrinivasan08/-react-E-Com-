@@ -1,0 +1,112 @@
+/* Centered heading */
+.centered-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.centered-heading h1 {
+    color: #333;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* New collection container */
+.new-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* New collection card */
+.new-collection-card {
+    position: relative;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-collection-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* New collection image */
+.new-collection-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Transparent overlay for Shop Now button */
+.new-collection-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.new-collection-card:hover .new-collection-info {
+    opacity: 1;
+}
+
+/* New collection name */
+.new-collection-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Add to cart button */
+.add-to-cart-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff758c;
+    color: white;
+}
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f80000;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

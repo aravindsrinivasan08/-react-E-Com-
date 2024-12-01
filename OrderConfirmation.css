@@ -1,0 +1,28 @@
+.order-confirmation-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.confirmation-icon {
+    font-size: 48px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.tick-mark {
+    font-size: 72px;
+    color: #4CAF50; /* Green color */
+}
+
+h3 {
+    color: #333;
+}
+
+.continue-shopping-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}

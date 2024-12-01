@@ -1,0 +1,168 @@
+/* General Styling for Checkout Page */
+
+.checkout-container {
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2em;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Payment Method Section */
+.payment-method-section h3 {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-options label:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #ff9900;
+    transform: scale(1.2);
+}
+
+/* Card Details Section */
+.card-details {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.card-details h4 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-details input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.card-details input:focus {
+    border-color: #ff9900;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Order Summary Section */
+.order-summary {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.order-summary h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 1.1em;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.total-amount {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 20px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+/* Place Order Button - Positioned Below Order Summary */
+.place-order-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.place-order-button {
+    width: 100px;
+    height: 40px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.place-order-button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+/* Additional Styling for Placeholder */
+input::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Add Some Gap Between Payment and Order Summary */
+.payment-method-section {
+    margin-bottom: 50px;
+}

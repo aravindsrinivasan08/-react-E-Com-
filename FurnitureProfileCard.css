@@ -1,0 +1,94 @@
+/* FurnitureProfileCard.css */
+.furniture-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.furniture-card-image-wrapper {
+    position: relative;
+}
+
+.furniture-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.furniture-card-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.furniture-card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.furniture-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.furniture-card-price {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.furniture-card-rating span {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.furniture-card-button {
+    background-color: #ffe609;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.furniture-card-button:hover {
+    background-color: #e3fb10;
+}
+/* QuantityControl.css */
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background: #ccc;
+}
+
+.quantity-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
